@@ -22,44 +22,52 @@
         <div class="container">
             <form action="">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email">
                 <label for="tel">Celular</label>
-                <input type="tel" name="tel" id="tel">
+                    <input type="tel" name="tel" id="tel">
                 <label for="data-ida">Data da ida</label>
-                <input type="date" name="data-ida" id="data-ida">
+                    <input type="date" name="data-ida" id="data-ida">
                 <label for="data-volta">Data da ida</label>
-                <input type="date" name="data-volta" id="data-volta">
+                    <input type="date" name="data-volta" id="data-volta">
                 <label for="origem">Origem</label>
-                <select name="origem" id="origem">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
+                    <select name="origem" id="origem">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
                 <label for="destino">Destino</label>
-                <select name="origem" id="origem">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <label for="infantil">Quarto com cama infantil?</label>
-                <input type="radio" name="infantil" id="infantil">
+                    <select name="origem" id="origem">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                <label>Quarto com cama infantil?</label>
+                    <input type="radio" id="sim" name="infantil" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="infantil" value="nao">
+                    <label for="nao">Não</label>
                 <label>Preferências da hospedagem</label>
-                <input type="checkbox" id="piscina" name="prefs[]" name="piscina">
-                <label for="preferencias"></label>
-                <input type="checkbox" id="wifi" name="prefs[]" name="wifi">
-                <label for="wifi"></label>
+                    <input type="checkbox" name="prefs[]" id="piscina" value="piscina">
+                    <label for="piscina">Piscina</label>
+                    <input type="checkbox" name="prefs[]" id="wifi" value="wifi">
+                    <label for="wifi">WiFi</label>
+                    <input type="checkbox" name="prefs[]" id="garagem" value="garagem">
+                    <label for="garagem">Garagem</label>
+                    <input type="checkbox" name="prefs[]" id="suite" value="suite">
+                    <label for="suite">Suíte</label>
+                <button type="submit">Solicitar Orçamento</button>
             </form>
         </div>
     </main>
