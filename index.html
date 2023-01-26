@@ -6,171 +6,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
     <title>Agência de Viagens</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <img src="assets/local-logo.png" alt="marcador de local roxo">
-            <h1 class="titulo-roxo">
-                Agência de Viagens
-            </h1>
+            <div class="header row">
+                <img class="icon" src="assets/local-logo.png" alt="marcador de local roxo">
+                <h1 class="titulo-roxo">
+                    Agência de Viagens
+                </h1>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="background"></div>
+        <div class="background-img">
+            <div class="container">
+                <div class="container-form">
+                    <div class="background-roxo">
+                        <img class="aviao icon" src="assets/aviao.png" alt="ícone de avião">
+
+                        <h2>
+                            Solicite um orçamento
+                        </h2>
+                    </div>
+
+                    <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" method="">
+                        <h1 class="titulo-form">
+                            Informe seus dados
+                        </h1>
+
+                        <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+
+                        <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+
+                        <label for="tel">Celular</label>
+                            <input type="tel" name="celular" id="tel">
+
+                        <div class="row">
+                            <div class="column">
+                                <label for="data-ida">Data da ida</label>
+                                    <input type="date" name="partida" id="data-ida">
+                                    <label for="origem">Origem</label>
+                                    <select name="origem" id="origem">
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                            </div>
+                            <div class="column">
+                                <label for="data-volta">Data da ida</label>
+                                    <input type="date" name="chegada" id="data-volta">
+                                <label for="destino">Destino</label>
+                                    <select name="destino" id="destino">
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <label>Quarto com cama infantil?</label>
+                            <div class="row">
+                                <input type="radio" id="sim" name="infantil" value="sim">
+                                    <label for="sim">Sim</label>
+                                <input type="radio" id="nao" name="infantil" value="nao">
+                                    <label for="nao">Não</label>
+                            </div>
+
+                        <label>Preferências da hospedagem</label>
+                            <div class="row">
+                                <input type="checkbox" name="preferencias" id="piscina" value="piscina">
+                                    <label for="piscina">Piscina</label>
+                                <input type="checkbox" name="preferencias" id="wifi" value="wifi">
+                                    <label for="wifi">WiFi</label>
+                                <input type="checkbox" name="preferencias" id="garagem" value="garagem">
+                                    <label for="garagem">Garagem</label>
+                                <input type="checkbox" name="preferencias" id="suite" value="suite">
+                                    <label for="suite">Suíte</label>
+                            </div>
+
+                        <button class="background-roxo" type="submit">Solicitar Orçamento</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <div class="container">
-            <div class="container-form">
-                <div class="container-roxo">
-                    <img src="assets/aviao.png" alt="ícone de avião">
-
-                    <h2 class="sub-roxo">
-                        Solicite um orçamento
-                    </h2>
-                </div>
-
-                <h1 class="titulo-form">
-                    Informe seus dados
-                </h1>
-
-                <form action="">
-                    <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome">
-                    <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    <label for="tel">Celular</label>
-                        <input type="tel" name="tel" id="tel">
-                    <label for="data-ida">Data da ida</label>
-                        <input type="date" name="data-ida" id="data-ida">
-                    <label for="data-volta">Data da ida</label>
-                        <input type="date" name="data-volta" id="data-volta">
-                    <label for="origem">Origem</label>
-                    <select name="origem" id="origem">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
-                    <label for="destino">Destino</label>
-                    <select name="origem" id="origem">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
-                    <label>Quarto com cama infantil?</label>
-                        <input type="radio" id="sim" name="infantil" value="sim">
-                    <label for="sim">Sim</label>
-                        <input type="radio" id="nao" name="infantil" value="nao">
-                    <label for="nao">Não</label>
-                    <label>Preferências da hospedagem</label>
-                        <input type="checkbox" name="prefs[]" id="piscina" value="piscina">
-                    <label for="piscina">Piscina</label>
-                        <input type="checkbox" name="prefs[]" id="wifi" value="wifi">
-                    <label for="wifi">WiFi</label>
-                        <input type="checkbox" name="prefs[]" id="garagem" value="garagem">
-                    <label for="garagem">Garagem</label>
-                        <input type="checkbox" name="prefs[]" id="suite" value="suite">
-                    <label for="suite">Suíte</label>
-                    <button type="submit">Solicitar Orçamento</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="container-infos">
-            <h2>
-                Ofertas
-            </h2>
-
-            <p>
-                Com até <span>50%</span> de desconto.
-            </p>
-
-            <div class="container-imgs">
-                <div class="container-img-grande">
-                    <img src="assets/rio.jpg" alt="Imagem do cristo redentor no rio de janeiro">
-
-                    <p class="legenda">
-                        Rio de Janeiro
-                    </p>
-                </div>
-
-                <div class="container-imgs-pequenas">
-                    <img src="assets/manaus.jpg" alt="Imagem da cidade de Manaus">
-
-                    <p class="legenda">
-                        Manaus
-                    </p>
-
-                    <img src="assets/saopaulo.jpg" alt="Imagem da cidade de São Paulo">
-
-                    <p class="legenda">
-                        São Paulo
-                    </p>
-
-                    <img src="assets/niteroi.jpg" alt="Imagem da cidade da ponte rio-niteroi">
-
-                    <p class="legenda">
-                        Rio de Janeiro
-                    </p>
-
-                    <img src="assets/maranhao.jpg" alt="Imagem da cidade de Maranhão">
-
-                    <p class="legenda">
-                        Maranhão
-                    </p>
+            <div class="container-infos">
+                <h2>
+                    Ofertas
+                </h2>
+    
+                <p>
+                    Com até <span>50%</span> de desconto.
+                </p>
+    
+                <div class="container-imgs">
+                    <div class="container-img-grande">
+                        <img src="assets/rio.jpg" alt="Imagem do cristo redentor no rio de janeiro">
+    
+                        <p class="legenda">
+                            Rio de Janeiro
+                        </p>
+                    </div>
+    
+                    <div class="container-imgs-pequenas">
+                        <img src="assets/manaus.jpg" alt="Imagem da cidade de Manaus">
+    
+                        <p class="legenda">
+                            Manaus
+                        </p>
+    
+                        <img src="assets/saopaulo.jpg" alt="Imagem da cidade de São Paulo">
+    
+                        <p class="legenda">
+                            São Paulo
+                        </p>
+    
+                        <img src="assets/niteroi.jpg" alt="Imagem da cidade da ponte rio-niteroi">
+    
+                        <p class="legenda">
+                            Rio de Janeiro
+                        </p>
+    
+                        <img src="assets/maranhao.jpg" alt="Imagem da cidade de Maranhão">
+    
+                        <p class="legenda">
+                            Maranhão
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container-infos">
-            <h2>
-                Explore a Natureza
-            </h2>
-
-            <p>
-                Viaje conosco e veja o melhor que a natureza tem a oferecer.
-            </p>
-
-            <div class="container-imgs-infos">
-                <div class="container-img-info">
-                    <img src="assets/lencol.jpg" alt="Imagem dos Lençois Maranhenses">
-                    <h3>
-                        Lençois Maranhenses, Brasil
-                    </h3>
-                    <p>
-                        Ida e volta a partir de R$79
-                    </p>
-                </div>
-
-                <div class="container-img-info">
-                    <img src="assets/goias.jpg" alt="Imagem da Cahoeira Santa Bárbara">
-                    <h3>
-                        Cachoeira Santa Bárbara, Brasil
-                    </h3>
-                    <p>
-                        Ida e volta a partir de R$139
-                    </p>
+    
+            <div class="container-infos">
+                <h2>
+                    Explore a Natureza
+                </h2>
+    
+                <p>
+                    Viaje conosco e veja o melhor que a natureza tem a oferecer.
+                </p>
+    
+                <div class="container-imgs-infos">
+                    <div class="container-img-info">
+                        <img src="assets/lencol.jpg" alt="Imagem dos Lençois Maranhenses">
+                        <h3>
+                            Lençois Maranhenses, Brasil
+                        </h3>
+                        <p>
+                            Ida e volta a partir de R$79
+                        </p>
+                    </div>
+    
+                    <div class="container-img-info">
+                        <img src="assets/goias.jpg" alt="Imagem da Cahoeira Santa Bárbara">
+                        <h3>
+                            Cachoeira Santa Bárbara, Brasil
+                        </h3>
+                        <p>
+                            Ida e volta a partir de R$139
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="container-roxo">
+    <footer class="background-roxo">
         <div class="container">
             <div class="infos-rodape">
-                <h2 class="sub-roxo">
+                <h2>
                     Contato 
                 </h2>
 
@@ -196,7 +217,7 @@
             </div>
 
             <div class="infos-rodape">
-                <h2 class="sub-roxo">
+                <h2>
                     Nossas Redes Sociais
                 </h2>
                 <div class="infos">

@@ -1,3 +1,136 @@
-.container-roxo {
-    background-color: purple;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    width: 1024px;
+}
+
+.header {
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    height: 55px;
+
+    font-size: 24px;
+    color: #5d15d1;
+    gap: 10px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.background-roxo {
+    background-color: #5d15d1;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    padding: 10px;
+}
+
+.aviao {
+    transform: rotate(-45deg);
+}
+
+.background-img {
+    background-image: url("/assets/bahia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form {
+    background-color: white;
+    
+    width: 100%;
+}
+
+.container-form form {
+
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    gap: 10px;
+}
+
+.column {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row label {
+    margin-right: 50px;
+}
+
+button {
+    border: none;
+
+    width: 170px;
+    height: 35px;
+
+    margin: 15px 0 5px 0;
+}
+
+.container-infos {
+    width: 100%;
+}
+
+.container-imgs {
+    width: 100%;
+}
+
+.container-imgs{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-img-grande {
+    max-width: 50%;
+}
+
+.container-img-grande img {
+    max-width: 100%;
+}
+
+.container-imgs-pequenas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+
+.container-imgs-pequenas img{
+    max-width: 25%;
 }
