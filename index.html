@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/resposive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
     <title>Agência de Viagens</title>
 </head>
@@ -13,7 +14,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="header row">
+            <div class="header">
                 <img class="icon" src="assets/local-logo.png" alt="marcador de local roxo">
                 <h1 class="titulo-roxo">
                     Agência de Viagens
@@ -82,23 +83,35 @@
                         </div>
 
                         <label>Quarto com cama infantil?</label>
-                            <div class="row">
-                                <input type="radio" id="sim" name="infantil" value="sim">
-                                    <label for="sim">Sim</label>
-                                <input type="radio" id="nao" name="infantil" value="nao">
-                                    <label for="nao">Não</label>
+                            <div class="row resp-row">
+                                <div>
+                                    <input class="full-width" type="radio" id="sim" name="infantil" value="sim">
+                                        <label for="sim">Sim</label>
+                                </div>
+                                <div>
+                                    <input class="full-width" type="radio" id="nao" name="infantil" value="nao">
+                                        <label for="nao">Não</label>
+                                </div>
                             </div>
 
                         <label>Preferências da hospedagem</label>
-                            <div class="row">
-                                <input type="checkbox" name="preferencias" id="piscina" value="piscina">
-                                    <label for="piscina">Piscina</label>
-                                <input type="checkbox" name="preferencias" id="wifi" value="wifi">
-                                    <label for="wifi">WiFi</label>
-                                <input type="checkbox" name="preferencias" id="garagem" value="garagem">
-                                    <label for="garagem">Garagem</label>
-                                <input type="checkbox" name="preferencias" id="suite" value="suite">
-                                    <label for="suite">Suíte</label>
+                            <div class="row resp-row">
+                                <div>
+                                    <input class="full-width" type="checkbox" name="preferencias" id="piscina" value="piscina">
+                                        <label for="piscina">Piscina</label>
+                                </div>
+                                <div>
+                                    <input class="full-width" type="checkbox" name="preferencias" id="wifi" value="wifi">
+                                        <label for="wifi">WiFi</label>
+                                </div>
+                                <div>
+                                    <input class="full-width" type="checkbox" name="preferencias" id="garagem" value="garagem">
+                                        <label for="garagem">Garagem</label>
+                                </div>
+                                <div>
+                                    <input class="full-width" type="checkbox" name="preferencias" id="suite" value="suite">
+                                        <label for="suite">Suíte</label>
+                                </div>
                             </div>
 
                         <button class="background-roxo" type="submit">Solicitar Orçamento</button>
