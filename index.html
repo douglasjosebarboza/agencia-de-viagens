@@ -35,49 +35,46 @@
                         </h2>
                     </div>
 
-                    <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" method="">
+                    <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" method="post">
                         <h1 class="titulo-form">
                             Informe seus dados
                         </h1>
 
                         <label for="nome">Nome</label>
-                            <input type="text" name="nome" id="nome">
+                            <input type="text" name="nome" id="nome" required>
 
                         <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
 
                         <label for="tel">Celular</label>
-                            <input type="tel" name="celular" id="tel">
+                            <input  type="tel" name="celular" id="tel" required>
 
                         <div class="row">
                             <div class="column">
                                 <label for="data-ida">Data da ida</label>
-                                    <input type="date" name="partida" id="data-ida">
+                                    <input type="date" name="partida" id="data-ida" required>
                                     <label for="origem">Origem</label>
-                                    <select name="origem" id="origem">
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
+                                    <select name="origem" id="origem" required>
+                                        <option selected disabled>Partindo de</option>
+                                        <option value="Amazonas">Amazonas</option>
+                                        <option value="Goiás">Goiás</option>
+                                        <option value="Maranhão">Maranhão</option>
+                                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                        <option value="São Paulo">São Paulo</option>
                                     </select>
                             </div>
                             <div class="column">
                                 <label for="data-volta">Data da ida</label>
-                                    <input type="date" name="chegada" id="data-volta">
+                                    <input type="date" name="chegada" id="data-volta" required>
                                 <label for="destino">Destino</label>
-                                    <select name="destino" id="destino">
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
+                                    <select name="destino" id="destino" required>
+                                        <option selected disabled>Indo para</option>
+                                        <option value="Amazonas">Amazonas</option>
+                                        <option value="Goiás">Goiás</option>
+                                        <option value="Maranhão">Maranhão</option>
+                                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                        <option value="São Paulo">São Paulo</option>
+                                    </select>
                                     </select>
                             </div>
                         </div>
@@ -97,19 +94,19 @@
                         <label>Preferências da hospedagem</label>
                             <div class="row resp-row">
                                 <div>
-                                    <input class="full-width" type="checkbox" name="preferencias" id="piscina" value="piscina">
+                                    <input class="full-width" type="checkbox" name="preferencias[]" id="piscina" value="piscina">
                                         <label for="piscina">Piscina</label>
                                 </div>
                                 <div>
-                                    <input class="full-width" type="checkbox" name="preferencias" id="wifi" value="wifi">
+                                    <input class="full-width" type="checkbox" name="preferencias[]" id="wifi" value="wifi">
                                         <label for="wifi">WiFi</label>
                                 </div>
                                 <div>
-                                    <input class="full-width" type="checkbox" name="preferencias" id="garagem" value="garagem">
+                                    <input class="full-width" type="checkbox" name="preferencias[]" id="garagem" value="garagem">
                                         <label for="garagem">Garagem</label>
                                 </div>
                                 <div>
-                                    <input class="full-width" type="checkbox" name="preferencias" id="suite" value="suite">
+                                    <input class="full-width" type="checkbox" name="preferencias[]" id="suite" value="suite">
                                         <label for="suite">Suíte</label>
                                 </div>
                             </div>
